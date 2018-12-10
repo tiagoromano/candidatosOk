@@ -21,7 +21,8 @@ public static Var processCurriculum(Var Entidade) throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {
-    System.out.println(Entidade.getObjectAsString());
+    System.out.println(cronapi.object.Operations.getObjectField(Entidade, Var.valueOf("curriculum")).getObjectAsString());
+    System.out.println(Var.valueOf(api.pdf.PdfManager.byteToText(cronapi.object.Operations.getObjectField(Entidade, Var.valueOf("curriculum")))).getObjectAsString());
     return Var.VAR_NULL;
    }
  }.call();

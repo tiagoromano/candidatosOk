@@ -35,7 +35,32 @@
                         </div>
                         <button class="btn btn-default col-md-12 col-xs-12 k-button btn-primary" type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button"> <span>{{"Login.view.Login" | translate}} </span></button>
                     </div>
+                    <h1 class="text-center component-holder col-xs-12 col-md-12 h3" xattr-position="h1 text-center" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-694252">Inscrição de Candidatos</h1><h1 class="text-center component-holder col-xs-12 col-md-12 h5" xattr-position="h1 text-center" xattr-type="h5" data-component="crn-text-component" id="crn-text-component50231">Entrar com...</h1><div class="col-xs-10 col-md-8 col-md-push-2 col-xs-push-1" data-container="true">
+                        <ul class="list-inline center-block text-center">
+                        </ul>
+                    </div>
                 </form>
+                <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-button" id="crn-button-671331">
+                    <ul class="list-inline center-block text-center">
+                                            <li>
+                  <form action="/signin/facebook" method="POST" id="facebook">
+                      <input type="hidden" name="scope" value="email,public_profile">
+                      <a title="Facebook" role="button" onclick="document.getElementById('facebook').submit();"><i class="fa fa-2x fa-facebook" style="font-size: 60px"></i></a>
+                      <span>Facebook</span>
+                  </form> </li>
+                         
+                        <li>
+                 
+                        </li><li>
+                  <form action="/signin/google" method="POST" id="google">
+                      <input type="hidden" name="scope" value="email">
+                      <a title="Google" role="button" onclick="document.getElementById('google').submit();"><i class="fa fa-2x fa-google" style="font-size: 60px"></i></a>
+                      <span>Gmail</span>
+                  </form> </li>
+                         
+                    </ul>
+                </div>
+                
                 <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-button" id="crn-button-671331">
                     <ul class="list-inline center-block text-center">
                                             <li>
