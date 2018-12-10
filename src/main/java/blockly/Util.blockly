@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Util" ruleName="Util" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="444" scrolly="-87.90000000000003" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <mutation>
+      <arg name="Entidade&lt;app.entity.User&gt;"/>
+    </mutation>
+    <field name="NAME">processCurriculum</field>
+    <comment h="80" pinned="false" w="160">Util</comment>
+    <statement name="STACK">
+      <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="PX+O+M5C-!=l]=Kp!EQO" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+        <value name="TEXT">
+          <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="U6!jK;];nTvC^la}[89@" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-Bpel=Uf[#]v(yCrZ%Q`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field name="VAR">Entidade&lt;app.entity.User&gt;</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>

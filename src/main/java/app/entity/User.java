@@ -45,45 +45,59 @@ public class User implements Serializable {
   * @generated
   */
   @Column(name = "email", nullable = true, unique = false, insertable=true, updatable=true)
-
+  
   private java.lang.String email;
 
   /**
   * @generated
   */
   @Column(name = "name", nullable = false, unique = false, insertable=true, updatable=true)
-
+  
   private java.lang.String name;
 
   /**
   * @generated
   */
   @Column(name = "login", nullable = false, unique = true, insertable=true, updatable=true)
-
+  
   private java.lang.String login;
 
   /**
   * @generated
   */
   @Column(name = "picture", nullable = true, unique = false, insertable=true, updatable=true)
-
+  
   private java.lang.String picture;
 
   /**
   * @generated
   */
-  @Column(name = "password", nullable = false, unique = false, insertable=true, updatable=true)
-
+  @Column(name = "password", nullable = true, unique = false, insertable=true, updatable=true)
+  
   private java.lang.String password;
 
   /**
   * @generated
   */
   @Column(name = "theme", nullable = true, unique = false, insertable=true, updatable=true)
-
+  
   private java.lang.String theme;
 
-    /**
+  /**
+  * @generated
+  */
+  @Column(name = "curriculum", nullable = true, unique = false, insertable=true, updatable=true)
+  
+  private byte[] curriculum;
+
+  /**
+  * @generated
+  */
+  @Column(name = "curriculumText", nullable = true, unique = false, insertable=true, updatable=true)
+  
+  private java.lang.String curriculumText;
+
+  /**
    * Construtor
    * @generated
    */
@@ -96,7 +110,7 @@ public class User implements Serializable {
    * return email
    * @generated
    */
-
+  
   public java.lang.String getEmail(){
     return this.email;
   }
@@ -116,7 +130,7 @@ public class User implements Serializable {
    * return name
    * @generated
    */
-
+  
   public java.lang.String getName(){
     return this.name;
   }
@@ -136,7 +150,7 @@ public class User implements Serializable {
    * return id
    * @generated
    */
-
+  
   public java.lang.String getId(){
     return this.id;
   }
@@ -156,7 +170,7 @@ public class User implements Serializable {
    * return login
    * @generated
    */
-
+  
   public java.lang.String getLogin(){
     return this.login;
   }
@@ -176,7 +190,7 @@ public class User implements Serializable {
    * return picture
    * @generated
    */
-
+  
   public java.lang.String getPicture(){
     return this.picture;
   }
@@ -196,7 +210,7 @@ public class User implements Serializable {
    * return password
    * @generated
    */
-
+  
   public java.lang.String getPassword(){
     return this.password;
   }
@@ -217,7 +231,7 @@ public class User implements Serializable {
    * return theme
    * @generated
    */
-
+  
   public java.lang.String getTheme(){
     return this.theme;
   }
@@ -229,6 +243,46 @@ public class User implements Serializable {
    */
   public User setTheme(java.lang.String theme){
     this.theme = theme;
+    return this;
+  }
+
+  /**
+   * Obtém curriculum
+   * return curriculum
+   * @generated
+   */
+  
+  public byte[] getCurriculum(){
+    return this.curriculum;
+  }
+
+  /**
+   * Define curriculum
+   * @param curriculum curriculum
+   * @generated
+   */
+  public User setCurriculum(byte[] curriculum){
+    this.curriculum = curriculum;
+    return this;
+  }
+
+  /**
+   * Obtém curriculumText
+   * return curriculumText
+   * @generated
+   */
+  
+  public java.lang.String getCurriculumText(){
+    return this.curriculumText;
+  }
+
+  /**
+   * Define curriculumText
+   * @param curriculumText curriculumText
+   * @generated
+   */
+  public User setCurriculumText(java.lang.String curriculumText){
+    this.curriculumText = curriculumText;
     return this;
   }
 

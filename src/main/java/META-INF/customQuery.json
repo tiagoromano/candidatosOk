@@ -53,5 +53,92 @@
     "calcFieldsSecurity": {},
     "errorHandles": {},
     "serviceUrl": "api/cronapi/query/roles/"
+  },
+  "query963145": {
+    "customId": "candidate",
+    "queryName": "Candidate",
+    "sourceType": "entityFullName",
+    "entitySimpleName": "User",
+    "entityFullName": "app.entity.User",
+    "query": {
+      "isValid": true,
+      "rulesEntity": [
+        {
+          "entity": "User",
+          "alias": "u",
+          "namespace": "app.entity.User"
+        }
+      ],
+      "rulesSelect": [
+        {
+          "func": "get",
+          "field": "u"
+        }
+      ],
+      "rulesGroupBy": [],
+      "rulesHaving": [],
+      "rulesOrderBy": [],
+      "rules": {
+        "condition": "AND",
+        "not": false,
+        "valid": true,
+        "rules": []
+      }
+    },
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true
+    },
+    "events": {
+      "afterUpdate": {
+        "type": "server",
+        "blocklyMethod": "processCurriculum",
+        "blocklyClass": "blockly.Util",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "Entidade\u003capp.entity.User\u003e",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.Util",
+          "sourcePath": "src/main/java/blockly/Util.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "processCurriculum",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u003capp.entity.User\u003e"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "defaultValues": {
+      "id": "null",
+      "email": "null",
+      "name": "null",
+      "login": "null",
+      "picture": "null",
+      "password": "null",
+      "theme": "null",
+      "curriculum": "null",
+      "curriculumText": "null"
+    },
+    "defaultValuesProperties": {},
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/odata/v2/query963145/"
   }
 }
