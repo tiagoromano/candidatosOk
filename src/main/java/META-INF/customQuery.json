@@ -126,9 +126,61 @@
       "id": "null",
       "email": "null",
       "name": "null",
-      "login": "null",
+      "login": {
+        "type": "server",
+        "blocklyMethod": "id",
+        "blocklyClass": "blockly.Generate",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "toConcat",
+            "value": "\u0027login\u0027",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.Generate",
+          "sourcePath": "src/main/java/blockly/Generate.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "id",
+              "hasReturn": "true",
+              "params": [
+                "toConcat"
+              ]
+            }
+          ]
+        }
+      },
       "picture": "null",
-      "password": "null",
+      "password": {
+        "type": "server",
+        "blocklyMethod": "id",
+        "blocklyClass": "blockly.Generate",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "toConcat",
+            "value": "\u0027password\u0027",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.Generate",
+          "sourcePath": "src/main/java/blockly/Generate.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "id",
+              "hasReturn": "true",
+              "params": [
+                "toConcat"
+              ]
+            }
+          ]
+        }
+      },
       "theme": "null",
       "curriculum": "null",
       "curriculumText": "null"

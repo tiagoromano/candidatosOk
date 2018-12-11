@@ -32,32 +32,21 @@ public class PdfManager {
 					"Pdf para converter" }, paramsType = { ObjectType.UNKNOWN }, returnType = ObjectType.STRING)
 	public static Var byteToText(Var content) throws Exception {	
 
+		String parsedText = "";
 		try {
-		
-			String parsedText;
-			try (RandomAccessRead randomAccessRead = (RandomAccessRead) new RandomAccessBuffer(content.getObjectAsByteArray())) {
-				// PDFParser parser = new PDFParser(randomAccessRead);
-				// parser.parse();
-
-				// COSDocument cosDoc = parser.getDocument();
-				PDFTextStripper pdfStripper = new PDFTextStripper();
-				// PDDocument pdDoc = new PDDocument(cosDoc);
-
-PDDocument pdDoc = PDDocument.load(content.getObjectAsByteArray());
-
-				parsedText = pdfStripper.getText(pdDoc);
-				return Var.valueOf(parsedText);
+			byte[] byteArray = content.getObjectAsByteArray();
+			if (byteArray != null) {
+				try (RandomAccessRead randomAccessRead = (RandomAccessRead) new RandomAccessBuffer(content.getObjectAsByteArray())) {
+					PDFTextStripper pdfStripper = new PDFTextStripper();
+					PDDocument pdDoc = PDDocument.load(content.getObjectAsByteArray());
+					parsedText = pdfStripper.getText(pdDoc);
+				}
 			}
 		}
 		catch(Exception e) {
 			throw new RuntimeException(e);
 		}
-		// PrintWriter pw = new PrintWriter("src/output/pdf.txt");
-		// pw.print(parsedText);
-		// pw.close();
-		// return Var.VAR_NULL;
-
-		// return varDs;
+		return Var.valueOf(parsedText);
 	}
 
 }

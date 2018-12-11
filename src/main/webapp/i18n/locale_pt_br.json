@@ -82,8 +82,8 @@
   "template.crud.actions": "Ações",
   "template.crud.load_more": "Carregar mais",
   "template.crud.new": "Novo",
-  "template.crud.clickOrDragAnImage":"Clique ou arraste uma imagem",
-  "template.crud.clickOrDragAnFile":"Clique ou arraste um arquivo",
+  "template.crud.clickOrDragAnImage": "Clique ou arraste uma imagem",
+  "template.crud.clickOrDragAnFile": "Clique ou arraste um arquivo",
   "ChooseTheme": "Escolha o Tema",
   "Theme": "Tema",
   "Home.view.themeChanged": "Tema alterado!",
@@ -96,5 +96,7 @@
   "Home.view.Department": "Departamento",
   "Home.view.PreviousPasswordCanNotBeEmpty": "Senha anterior não pode estar vazio.",
   "Home.view.NewPasswordCanNotBeEmpty": "Nova senha não pode estar vazio.",
-  "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmação não pode estar vazio."
+  "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmação não pode estar vazio.",
+  "Candidato": "Candidato",
+  "AnexarCurriculum": "Anexar Currículo"
 }

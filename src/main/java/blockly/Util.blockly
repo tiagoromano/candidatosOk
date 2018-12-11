@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Util" ruleName="Util" ruleSynchronous="false" ruleTimeout="" ruleType="I">
-  <metadata scale="0.8333333333333334" scrollx="484.74059907509525" scrolly="-93.66666666666656" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="0.8333333333333334" scrollx="485.74059907509525" scrolly="-93.6666666666666" target="Anb:u5+^,0vLkL9QIqn5"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <mutation>
       <arg name="Entidade&lt;app.entity.User&gt;"/>
@@ -42,8 +42,8 @@
               <arg name="id"/>
             </mutation>
             <value name="ARG0">
-              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="pU:BB-)c5_[Htq9Ol46U" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                <field name="TEXT">ROMANO GOSTOSO E MALHADO</field>
+              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="0rDad!M!Tj.IF=Xv]@Fg" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">curriculumText</field>
               </block>
             </value>
             <value name="ARG1">
@@ -81,32 +81,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="0rDad!M!Tj.IF=Xv]@Fg" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="112" y="278">
-    <field name="VAR">curriculumText</field>
-  </block>
-  <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="h8YHuanM:%,[!_m8jjfg" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print" x="-23" y="503">
-    <value name="TEXT">
-      <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="o={`~:6_`42=Si~^peWO" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
-        <field name="TEXT">abc</field>
-      </shadow>
-      <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="kjEh6^Y`MG`+Ho|WV9Ow" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-        <mutation name="{{cronapi.object.Operations.getObjectField}}">
-          <arg name="Objeto"/>
-          <arg name="Caminho a percorrer"/>
-        </mutation>
-        <value name="PARAM0">
-          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$?_}K:X,KU,4;Ob`fT1@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-            <field name="VAR">Entidade&lt;app.entity.User&gt;</field>
-          </block>
-        </value>
-        <value name="PARAM1">
-          <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="co)M5sc5P8,JZrJsKPX|" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
-            <mutation name="" return-raw-type="undefined"/>
-            <field name="SELECT">id</field>
-          </block>
-        </value>
-      </block>
-    </value>
   </block>
 </blockly>

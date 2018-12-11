@@ -24,7 +24,7 @@ public static Var processCurriculum(Var Entidade) throws Exception {
 
    public Var call() throws Exception {
     curriculumText = Var.valueOf(api.pdf.PdfManager.byteToText(cronapi.object.Operations.getObjectField(Entidade, Var.valueOf("curriculum"))));
-    cronapi.database.Operations.execute(Var.valueOf("app.entity.User"), Var.valueOf("update User set curriculumText = :curriculumText where id = :id"),Var.valueOf("curriculumText",Var.valueOf("ROMANO GOSTOSO E MALHADO")),Var.valueOf("id",cronapi.object.Operations.getObjectField(Entidade, Var.valueOf("id"))));
+    cronapi.database.Operations.execute(Var.valueOf("app.entity.User"), Var.valueOf("update User set curriculumText = :curriculumText where id = :id"),Var.valueOf("curriculumText",curriculumText),Var.valueOf("id",cronapi.object.Operations.getObjectField(Entidade, Var.valueOf("id"))));
     System.out.println(curriculumText.getObjectAsString());
     return Var.VAR_NULL;
    }
