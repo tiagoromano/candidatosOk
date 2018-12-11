@@ -30,21 +30,21 @@ public class PdfManager {
 	@CronapiMetaData(type = "function", name = "Converter PDF para Texto", nameTags = {
 			"PdfToText" }, description = "Converter PDF para Texto", params = {
 					"Pdf para converter" }, paramsType = { ObjectType.UNKNOWN }, returnType = ObjectType.STRING)
-	public static Var byteToText(Var content) throws Exception {
-		// Var varDs = new Var(ds);
+	public static Var byteToText(Var content) throws Exception {	
 
 		try {
-			content.getObjectAsByteArray();
-
-			// File f = new File(filename);
+		
 			String parsedText;
 			try (RandomAccessRead randomAccessRead = (RandomAccessRead) new RandomAccessBuffer(content.getObjectAsByteArray())) {
-				PDFParser parser = new PDFParser(randomAccessRead);
-				parser.parse();
+				// PDFParser parser = new PDFParser(randomAccessRead);
+				// parser.parse();
 
-				COSDocument cosDoc = parser.getDocument();
+				// COSDocument cosDoc = parser.getDocument();
 				PDFTextStripper pdfStripper = new PDFTextStripper();
-				PDDocument pdDoc = new PDDocument(cosDoc);
+				// PDDocument pdDoc = new PDDocument(cosDoc);
+
+PDDocument pdDoc = PDDocument.load(content.getObjectAsByteArray());
+
 				parsedText = pdfStripper.getText(pdDoc);
 				return Var.valueOf(parsedText);
 			}

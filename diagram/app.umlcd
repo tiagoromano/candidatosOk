@@ -368,7 +368,7 @@
           "name": "curriculumText",
           "type": "java.lang.String",
           "dbName": "curriculumText",
-          "dbLength": "",
+          "dbLength": 65535,
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",

@@ -93,7 +93,7 @@ public class User implements Serializable {
   /**
   * @generated
   */
-  @Column(name = "curriculumText", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "curriculumText", nullable = true, unique = false, length=65535, insertable=true, updatable=true)
   
   private java.lang.String curriculumText;
 
