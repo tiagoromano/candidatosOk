@@ -93,35 +93,7 @@
       "DELETE": true,
       "FILTER": true
     },
-    "events": {
-      "afterUpdate": {
-        "type": "server",
-        "blocklyMethod": "processCurriculum",
-        "blocklyClass": "blockly.Util",
-        "blocklyLanguage": "java",
-        "blocklyParams": [
-          {
-            "name": "Entidade\u003capp.entity.User\u003e",
-            "value": "data",
-            "type": "CUSTOM"
-          }
-        ],
-        "blocklyJson": {
-          "namespace": "blockly.Util",
-          "sourcePath": "src/main/java/blockly/Util.blockly",
-          "language": "java",
-          "methods": [
-            {
-              "name": "processCurriculum",
-              "hasReturn": "true",
-              "params": [
-                "Entidade\u003capp.entity.User\u003e"
-              ]
-            }
-          ]
-        }
-      }
-    },
+    "events": {},
     "defaultValues": {
       "id": "null",
       "email": "null",
