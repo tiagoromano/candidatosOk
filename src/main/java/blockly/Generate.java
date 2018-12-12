@@ -17,7 +17,7 @@ public static final int TIMEOUT = 300;
  * @return Var
  */
 // Generate
-public static Var id2(Var toConcat) throws Exception {
+public static Var newId(Var toConcat) throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {

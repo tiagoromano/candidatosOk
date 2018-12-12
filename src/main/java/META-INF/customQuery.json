@@ -100,7 +100,7 @@
       "name": "null",
       "login": {
         "type": "server",
-        "blocklyMethod": "id",
+        "blocklyMethod": "newId",
         "blocklyClass": "blockly.Generate",
         "blocklyLanguage": "java",
         "blocklyParams": [
@@ -116,7 +116,7 @@
           "language": "java",
           "methods": [
             {
-              "name": "id",
+              "name": "newId",
               "hasReturn": "true",
               "params": [
                 "toConcat"
@@ -128,7 +128,7 @@
       "picture": "null",
       "password": {
         "type": "server",
-        "blocklyMethod": "id",
+        "blocklyMethod": "newId",
         "blocklyClass": "blockly.Generate",
         "blocklyLanguage": "java",
         "blocklyParams": [
@@ -144,7 +144,7 @@
           "language": "java",
           "methods": [
             {
-              "name": "id",
+              "name": "newId",
               "hasReturn": "true",
               "params": [
                 "toConcat"
