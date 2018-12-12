@@ -27,6 +27,22 @@
         </resources>
         <plugins>
             <plugin>
+                <groupId>org.cloudfoundry</groupId>
+                <artifactId>cf-maven-plugin</artifactId>
+                <version>1.1.3</version>
+                <configuration>
+                    <target>https://api.cronapp.io</target>
+                    <org>tiago.romano@techne.com.br</org>
+                    <space>develop</space>
+                    <appname>pocselecao</appname>
+                    <url>pocselecao.cronapp.io</url>
+                    <instances>1</instances>
+                    <memory>1024</memory>
+                    <username/>
+                    <password/>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
