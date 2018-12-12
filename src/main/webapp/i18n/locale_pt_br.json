@@ -98,5 +98,6 @@
   "Home.view.NewPasswordCanNotBeEmpty": "Nova senha não pode estar vazio.",
   "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmação não pode estar vazio.",
   "Candidato": "Candidato",
-  "AnexarCurriculum": "Anexar Currículo"
+  "AnexarCurriculum": "Anexar Currículo",
+  "DownloadCurriculum": "Download Currículo"
 }
